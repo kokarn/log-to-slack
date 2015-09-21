@@ -13,6 +13,11 @@ cp /path/to/node/install/config/example.json /path/to/node/install/config/defaul
 vim /path/to/node/install/config/default.json
 log-to-slack
 ```
+If you are on ubuntu you might need to symlink ```node``` to ```nodejs```
+http://stackoverflow.com/a/18130296/1223319
+```shell
+sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
+```
 
 ## Available modules
 * Apache2
