@@ -8,10 +8,10 @@
 ## Installing
 
 ```shell
-npm install log-to-slack
-cp config/example.json config/default.json
-vi config/default.json
-bin/log-to-slack
+npm install -g log-to-slack
+cp /path/to/node/install/config/example.json /path/to/node/install/config/default.json
+vim /path/to/node/install/config/default.json
+log-to-slack
 ```
 
 ## Available modules
