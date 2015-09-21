@@ -1,0 +1,30 @@
+// Yes this file allows comments
+{
+    // https://api.slack.com/web
+    "slackApiToken": "my-slack-api-key",
+
+    "slackChannel": "#syslog",
+    "slackUsername": "Logan",
+    "slackIconUrl": "http://i.imgur.com/JKDkKU0.png",
+
+    "checkInterval": 30000,
+
+    "servers": [
+        {
+            "host": "myserver.myhost.com",
+            "username": "username",
+            "password": "password",
+            "services": [
+                "apache2"
+            ]
+        },
+        {
+            "host": "54.175.129.157",
+            "username": "anotheruser",
+            "password": "anotherpassword",
+            "services": [
+                "apache2"
+            ]
+        }
+    ]
+}
