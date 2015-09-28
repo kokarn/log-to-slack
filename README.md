@@ -20,4 +20,5 @@ sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 ```
 
 ## Available modules
-* Apache2
+* Apache2 error logs
+* Apache2 access logs (4xx & 5xx)

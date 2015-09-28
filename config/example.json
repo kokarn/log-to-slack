@@ -21,7 +21,8 @@
             "username": "anotheruser",
             "password": "anotherpassword",
             "services": [
-                "apache2"
+                "apache2",
+                "apache2Access"
             ]
         }
     ]
