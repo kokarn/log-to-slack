@@ -19,6 +19,71 @@ http://stackoverflow.com/a/18130296/1223319
 sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 ```
 
+## Available options
+The config file needs all the following settings
+
+```host``` What host to use for the connection
+```username``` What username to use when connecting
+```password``` What password to use when connecting
+
 ## Available modules
-* Apache2 error logs
-* Apache2 access logs (4xx & 5xx)
+#### Apache2 error logs
+#### Apache2 access logs (4xx & 5xx)
+
+```skipFiles```: Array of filenames to match and skip if found.
+Example
+```
+skipFiles: [
+    "robots.txt",
+    "favicon.ico"
+]
+```
+
+```skipCodes```: Array of response codes that we shouldn't report.
+Example
+```
+skipCodes: [
+    408
+]
+```
+
+## Example config
+```
+{
+    "slackApiToken": "my-slack-api-key",
+
+    "slackChannel": "#syslog",
+    "slackUsername": "Logan",
+    "slackIconUrl": "http://i.imgur.com/JKDkKU0.png",
+
+    "checkInterval": 30000,
+
+    "servers": [
+        {
+            "host": "myserver.myhost.com",
+            "username": "username",
+            "password": "password",
+            "services": {
+                "apache2": true
+            }
+        },
+        {
+            "host": "54.175.129.157",
+            "username": "anotheruser",
+            "password": "anotherpassword",
+            "services": {
+                "apache2": true,
+                "apache2Access": {
+                    "skipCodes": [
+                        408
+                    ],
+                    "skipFiles": [
+                        "favicon.ico",
+                        "robots.txt"
+                    ]
+                }
+            }
+        }
+    ]
+}
+```
