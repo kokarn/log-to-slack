@@ -12,18 +12,26 @@
             "host": "myserver.myhost.com",
             "username": "username",
             "password": "password",
-            "services": [
-                "apache2"
-            ]
+            "services": {
+                "apache2": true
+            }
         },
         {
             "host": "54.175.129.157",
             "username": "anotheruser",
             "password": "anotherpassword",
-            "services": [
-                "apache2",
-                "apache2Access"
-            ]
+            "services": {
+                "apache2": true,
+                "apache2Access": {
+                    "skipCodes": [
+                        408
+                    ],
+                    "skipFiles": [
+                        "favicon.ico",
+                        "robots.txt"
+                    ]
+                }
+            }
         }
     ]
 }
