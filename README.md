@@ -53,6 +53,12 @@ Example
     408
 ]
 ```
+#### Symfony logs
+```path```: The path to the log file
+Example
+```
+"path": "/my/path/to/my/prod.log"
+```
 
 ## Example config
 ```
@@ -71,7 +77,10 @@ Example
             "username": "username",
             "password": "password",
             "services": {
-                "apache2": true
+                "apache2": true,
+                "symfony": {
+                    "path": "/path/to/my/prod.log"
+                }
             }
         },
         {
