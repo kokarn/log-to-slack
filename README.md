@@ -40,7 +40,7 @@ Default: ```500000```
 ```skipFiles```: Array of filenames to match and skip if found.
 Example
 ```
-skipFiles: [
+"skipFiles": [
     "robots.txt",
     "favicon.ico"
 ]
@@ -49,7 +49,7 @@ skipFiles: [
 ```skipCodes```: Array of response codes that we shouldn't report.
 Example
 ```
-skipCodes: [
+"skipCodes": [
     408
 ]
 ```
