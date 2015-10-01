@@ -30,6 +30,13 @@ The config file needs all the following settings
 #### Apache2 error logs
 #### Apache2 access logs (4xx & 5xx)
 
+```lineCount```: The number of lines to lookback when parsing the log
+Example
+```
+"lineCount": 50000
+```
+Default: ```500000```
+
 ```skipFiles```: Array of filenames to match and skip if found.
 Example
 ```
@@ -80,7 +87,8 @@ skipCodes: [
                     "skipFiles": [
                         "favicon.ico",
                         "robots.txt"
-                    ]
+                    ],
+                    "lineCount": 50000
                 }
             }
         }
