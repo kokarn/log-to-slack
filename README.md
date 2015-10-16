@@ -60,6 +60,8 @@ Example
 "path": "/my/path/to/my/prod.log"
 ```
 
+#### nginx error logs
+
 ## Example config
 ```
 {
