@@ -20,7 +20,13 @@ sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 ```
 
 ## Available options
-The config file needs all the following settings
+
+### Command line
+```--debug``` Run in debug mode
+* Disables posting to Slack
+* Outputs more stuff in the console
+
+### Config file
 
 ```host``` What host to use for the connection
 ```username``` What username to use when connecting
