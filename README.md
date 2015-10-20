@@ -59,6 +59,13 @@ Example
     408
 ]
 ```
+
+```useVulnList```: Use [web-vuln-scan-list](https://github.com/kokarn/web-vuln-scan-list) to exclude common paths used by vulnerability scanners from showing up as errors.
+Example
+```
+"useVulnList": false
+```
+Default: ```true```
 #### Symfony logs
 ```path```: The path to the log file
 Example
