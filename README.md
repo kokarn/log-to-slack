@@ -51,6 +51,7 @@ Example
     "favicon.ico"
 ]
 ```
+Default: ```[]```
 
 ```skipCodes```: Array of response codes that we shouldn't report.
 Example
@@ -59,6 +60,7 @@ Example
     408
 ]
 ```
+Default: ```[]```
 
 ```useVulnList```: Use [web-vuln-scan-list](https://github.com/kokarn/web-vuln-scan-list) to exclude common paths used by vulnerability scanners from showing up as errors.
 Example
@@ -66,12 +68,14 @@ Example
 "useVulnList": false
 ```
 Default: ```true```
+
 #### Symfony logs
 ```path```: The path to the log file
 Example
 ```
 "path": "/my/path/to/my/prod.log"
 ```
+Default: ```""```
 
 #### nginx error logs
 
