@@ -77,6 +77,16 @@ Example
 ```
 Default: ```""```
 
+```skipStrings```: Array of filenames to match and skip if found.
+Example
+```
+"skipStrings": [
+    "robots.txt",
+    "favicon.ico"
+]
+```
+Default: ```[]```
+
 #### nginx error logs
 
 ## Example config
