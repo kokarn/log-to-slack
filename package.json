@@ -1,6 +1,6 @@
 {
   "name": "log-to-slack",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Parse logs on remote servers and post some of them Slack",
   "homepage": "https://github.com/kokarn/log-to-slack",
   "main": "./index.js",
