@@ -113,6 +113,15 @@ Example
 Default: ```true```
 
 #### nginx error logs
+```skipStrings```: Array of filenames to match and skip if found.
+Example
+```
+"skipStrings": [
+    "robots.txt",
+    "favicon.ico"
+]
+```
+Default: ```[]```
 
 ## Example config
 ```
