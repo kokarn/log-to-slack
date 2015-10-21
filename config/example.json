@@ -26,7 +26,7 @@
                     "skipCodes": [
                         408
                     ],
-                    "skipFiles": [
+                    "skipStrings": [
                         "favicon.ico",
                         "robots.txt"
                     ]

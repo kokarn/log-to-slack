@@ -43,10 +43,10 @@ Example
 ```
 Default: ```500000```
 
-```skipFiles```: Array of filenames to match and skip if found.
+```skipStrings```: Array of filenames to match and skip if found.
 Example
 ```
-"skipFiles": [
+"skipStrings": [
     "robots.txt",
     "favicon.ico"
 ]
@@ -112,7 +112,7 @@ Default: ```""```
                     "skipCodes": [
                         408
                     ],
-                    "skipFiles": [
+                    "skipStrings": [
                         "favicon.ico",
                         "robots.txt"
                     ],
