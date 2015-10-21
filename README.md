@@ -34,6 +34,17 @@ sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 
 ## Available modules
 #### Apache2 error logs
+
+```skipStrings```: Array of filenames to match and skip if found.
+Example
+```
+"skipStrings": [
+    "robots.txt",
+    "favicon.ico"
+]
+```
+Default: ```[]```
+
 #### Apache2 access logs (4xx & 5xx)
 
 ```lineCount```: The number of lines to lookback when parsing the log
