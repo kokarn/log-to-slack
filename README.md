@@ -9,9 +9,7 @@
 
 ```shell
 npm install -g log-to-slack
-cp /path/to/node/install/config/example.json /path/to/node/install/config/default.json
-vim /path/to/node/install/config/default.json
-log-to-slack
+log-to-slack --config path/to/config.json
 ```
 If you are on ubuntu you might need to symlink ```node``` to ```nodejs```
 http://stackoverflow.com/a/18130296/1223319
