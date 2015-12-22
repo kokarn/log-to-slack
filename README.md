@@ -33,6 +33,7 @@ sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 ## Available modules
 #### Apache2 error logs
 ```skipStrings```: Array of strings to match and skip if found.
+
 Example
 ```json
 "skipStrings": [
@@ -43,6 +44,7 @@ Example
 Default: ```[]```
 
 ```useVulnList```: Use [web-vuln-scan-list](https://github.com/kokarn/web-vuln-scan-list) to exclude common paths used by vulnerability scanners from showing up as errors.
+
 Example
 ```json
 "useVulnList": false
@@ -50,7 +52,8 @@ Example
 Default: ```true```
 
 #### Apache2 access logs (4xx & 5xx)
-```lineCount```: The number of lines to lookback when parsing the log
+```lineCount```: The number of lines to lookback when parsing the log.
+
 Example
 ```json
 "lineCount": 50000
@@ -58,6 +61,7 @@ Example
 Default: ```500000```
 
 ```skipStrings```: Array of strings to match and skip if found.
+
 Example
 ```json
 "skipStrings": [
@@ -68,6 +72,7 @@ Example
 Default: ```[]```
 
 ```skipCodes```: Array of response codes that we shouldn't report.
+
 Example
 ```json
 "skipCodes": [
@@ -77,6 +82,7 @@ Example
 Default: ```[]```
 
 ```useVulnList```: Use [web-vuln-scan-list](https://github.com/kokarn/web-vuln-scan-list) to exclude common paths used by vulnerability scanners from showing up as errors.
+
 Example
 ```json
 "useVulnList": false
@@ -84,7 +90,8 @@ Example
 Default: ```true```
 
 #### Symfony logs
-```path```: The path to the log file
+```path```: The path to the log file.
+
 Example
 ```json
 "path": "/my/path/to/my/prod.log"
@@ -92,6 +99,7 @@ Example
 Default: ```""```
 
 ```skipStrings```: Array of strings to match and skip if found.
+
 Example
 ```json
 "skipStrings": [
@@ -102,6 +110,7 @@ Example
 Default: ```[]```
 
 ```useVulnList```: Use [web-vuln-scan-list](https://github.com/kokarn/web-vuln-scan-list) to exclude common paths used by vulnerability scanners from showing up as errors.
+
 Example
 ```json
 "useVulnList": false
@@ -110,6 +119,7 @@ Default: ```true```
 
 #### nginx error logs
 ```skipStrings```: Array of strings to match and skip if found.
+
 Example
 ```json
 "skipStrings": [
@@ -120,6 +130,7 @@ Example
 Default: ```[]```
 
 ```useVulnList```: Use [web-vuln-scan-list](https://github.com/kokarn/web-vuln-scan-list) to exclude common paths used by vulnerability scanners from showing up as errors.
+
 Example
 ```json
 "useVulnList": false
