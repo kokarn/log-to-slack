@@ -36,13 +36,12 @@
         "no-alert": 1,
         "no-div-regex": 2,
         "no-else-return": 2,
-        "no-empty-label": 2,
+        "no-labels": 2,
         "no-extra-bind": 2,
         "no-floating-decimal": 2,
         "no-fallthrough": 1,
         "no-implicit-coercion": 2,
         "no-implied-eval": 2,
-        "no-labels": 2,
         "no-lone-blocks": 2,
         "no-native-reassign": 2,
         "no-new-func": 2,
@@ -62,9 +61,11 @@
         "radix": 2,
         "vars-on-top": 1,
         "yoda": 2,
-        "space-before-keywords": [
+        "keyword-spacing": [
             2,
-            "always"
+            {
+                "before": true
+            }
         ],
         "block-scoped-var": 2,
         "comma-style": 2,
@@ -137,7 +138,6 @@
             2,
             "after"
         ],
-        "no-multi-str": 2,
         "no-mixed-spaces-and-tabs": 2,
         "no-trailing-spaces": 1,
         "brace-style": 2,
