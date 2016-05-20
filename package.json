@@ -12,6 +12,10 @@
   "bugs": {
     "url": "https://github.com/kokarn/log-to-slack/issues"
   },
+  "scripts": {
+    "eslint": "eslint",
+    "test": "eslint lib"
+  },
   "license": "MIT",
   "author": {
     "name": "Oskar Risberg",
