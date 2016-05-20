@@ -27,6 +27,7 @@ sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 ### Config file
 
 ```host``` What host to use for the connection
+```port``` What port to use for the connection
 ```username``` What username to use when connecting
 ```password``` What password to use when connecting
 
@@ -151,6 +152,7 @@ Default: ```true```
     "servers": [
         {
             "host": "myserver.myhost.com",
+            "port": "myport",
             "username": "username",
             "password": "password",
             "services": {
