@@ -31,6 +31,8 @@ sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 ```username``` What username to use when connecting
 ```password``` What password to use when connecting
 
+[Example config file](#example-config)
+
 ## Available modules
 #### Apache2 error logs
 ```skipStrings```: Array of strings to match and skip if found.
